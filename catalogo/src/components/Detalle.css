@@ -1,10 +1,7 @@
 /* DetalleProducto.css */
 
-.detalle-producto {
+.detalle-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -12,34 +9,49 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.detalle-producto h2 {
+.detalle-image {
+    flex: 1;
+}
+
+.detalle-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.detalle-info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.detalle-info h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.detalle-producto p {
+.detalle-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.detalle-more-info {
+    display: flex;
+    justify-content: space-between;
     font-size: 16px;
 }
 
-.detalle-producto img {
-    width: 100%;
-    max-width: 300px;
-    /* Ajusta el ancho máximo de la imagen según tus preferencias */
-    height: auto;
-    margin-top: 10px;
+/* Estilo de enlace para efecto de hover */
+.detalle-more-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-/* Estiliza las imágenes adicionales */
-.detalle-producto .imagen-adicional {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+.detalle-more-info a:hover {
+    color: #0056b3;
 }
 
-.detalle-producto .imagen-adicional img {
-    width: calc(33.33% - 10px);
-    /* Divide el espacio en tres columnas y agrega margen entre ellas */
-    max-width: 100%;
-    height: auto;
-}
+/* Agrega más estilos según sea necesario */
